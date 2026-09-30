@@ -1,0 +1,30 @@
+{
+  "name": "mongo-api-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "seed": "pnpm build && node dist/seed/seed.js"
+  },
+  "keywords": [],
+  "author": "Christian Casaran",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.0",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "mongoose": "^9.10.3",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.6.0",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
